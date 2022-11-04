@@ -39,6 +39,11 @@ class BookstoreScaffoldBody extends StatelessWidget {
             key: ValueKey('settings'),
             child: SettingsScreen(),
           )
+        else if (currentRoute.pathTemplate.startsWith('/home'))
+          const FadeTransitionPage<void>(
+            key: ValueKey('home'),
+            child: SettingsScreen(),
+          )
         else if (currentRoute.pathTemplate.startsWith('/books') ||
             currentRoute.pathTemplate == '/')
           const FadeTransitionPage<void>(
