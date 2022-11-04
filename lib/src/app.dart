@@ -3,7 +3,6 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-
 import 'auth.dart';
 import 'routing.dart';
 import 'screens/navigator.dart';
