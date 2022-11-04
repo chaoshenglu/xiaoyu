@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../routing.dart';
 import '../screens/settings.dart';
+import '../screens/home.dart';
 import '../widgets/fade_transition_page.dart';
 import 'authors.dart';
 import 'books.dart';
@@ -42,7 +43,7 @@ class BookstoreScaffoldBody extends StatelessWidget {
         else if (currentRoute.pathTemplate.startsWith('/home'))
           const FadeTransitionPage<void>(
             key: ValueKey('home'),
-            child: SettingsScreen(),
+            child: HomeScreen(),
           )
         else if (currentRoute.pathTemplate.startsWith('/books') ||
             currentRoute.pathTemplate == '/')
