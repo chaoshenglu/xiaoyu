@@ -10,6 +10,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: Text('首页'),
+        ),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Align(

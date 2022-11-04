@@ -18,6 +18,9 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: Text('设置'),
+        ),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Align(
