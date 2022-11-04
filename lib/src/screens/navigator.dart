@@ -71,7 +71,6 @@ class _BookstoreNavigatorState extends State<BookstoreNavigator> {
       },
       pages: [
         if (routeState.route.pathTemplate == '/signin')
-          // Display the sign in screen.
           FadeTransitionPage<void>(
             key: _signInKey,
             child: SignInScreen(
@@ -85,13 +84,10 @@ class _BookstoreNavigatorState extends State<BookstoreNavigator> {
             ),
           )
         else ...[
-          // Display the app
           FadeTransitionPage<void>(
             key: _scaffoldKey,
             child: const BookstoreScaffold(),
           ),
-          // Add an additional page to the stack if the user is viewing a book
-          // or an author
           if (selectedBook != null)
             MaterialPage<void>(
               key: _bookDetailsKey,

@@ -26,6 +26,7 @@ class _BookstoreState extends State<Bookstore> {
     /// Configure the parser with all of the app's allowed path templates.
     _routeParser = TemplateRouteParser(
       allowedPaths: [
+        '/home',
         '/signin',
         '/authors',
         '/settings',
@@ -36,7 +37,7 @@ class _BookstoreState extends State<Bookstore> {
         '/author/:authorId',
       ],
       guard: _guard,
-      initialRoute: '/signin',
+      initialRoute: '/home',
     );
 
     _routeState = RouteState(_routeParser);
@@ -90,7 +91,7 @@ class _BookstoreState extends State<Bookstore> {
     }
     // Go to /books if the user is signed in and tries to go to /signin.
     else if (signedIn && from == signInRoute) {
-      return ParsedRoute('/books/popular', '/books/popular', {}, {});
+      return ParsedRoute('/home', '/home', {}, {});
     }
     return from;
   }

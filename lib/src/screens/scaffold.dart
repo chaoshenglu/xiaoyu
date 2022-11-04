@@ -23,14 +23,19 @@ class BookstoreScaffold extends StatelessWidget {
         selectedIndex: selectedIndex,
         body: const BookstoreScaffoldBody(),
         onDestinationSelected: (idx) {
-          if (idx == 0) routeState.go('/books/popular');
-          if (idx == 1) routeState.go('/authors');
-          if (idx == 2) routeState.go('/settings');
+          if (idx == 0) routeState.go('/home');
+          if (idx == 1) routeState.go('/books/popular');
+          if (idx == 2) routeState.go('/authors');
+          if (idx == 3) routeState.go('/settings');
         },
         destinations: const [
           AdaptiveScaffoldDestination(
             title: '首页',
             icon: Icons.home,
+          ),
+          AdaptiveScaffoldDestination(
+            title: 'Books',
+            icon: Icons.book,
           ),
           AdaptiveScaffoldDestination(
             title: '我的',
