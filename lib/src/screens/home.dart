@@ -39,7 +39,7 @@ class HomeContent extends StatelessWidget {
         children: [
           ...[
             Text(
-              'Home',
+              '首页',
               style: Theme.of(context).textTheme.headlineMedium,
             )
           ]
