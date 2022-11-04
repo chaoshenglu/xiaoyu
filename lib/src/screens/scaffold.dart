@@ -51,9 +51,10 @@ class BookstoreScaffold extends StatelessWidget {
   }
 
   int _getSelectedIndex(String pathTemplate) {
-    if (pathTemplate.startsWith('/books')) return 0;
-    if (pathTemplate == '/authors') return 1;
-    if (pathTemplate == '/settings') return 2;
+    if (pathTemplate == '/home') return 0;
+    if (pathTemplate.startsWith('/books')) return 1;
+    if (pathTemplate == '/authors') return 2;
+    if (pathTemplate == '/settings') return 3;
     return 0;
   }
 }
