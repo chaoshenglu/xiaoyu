@@ -3,7 +3,6 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'dart:io';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
@@ -27,7 +26,7 @@ void main() {
   runApp(const Bookstore());
 }
 
-const double windowWidth = 480;
+const double windowWidth = 404;
 const double windowHeight = 854;
 
 void setupWindow() {
