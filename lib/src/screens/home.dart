@@ -15,19 +15,10 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: SafeArea(
           child: SingleChildScrollView(
-            child: Align(
-              alignment: Alignment.topCenter,
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 400),
-                child: const Card(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 18, horizontal: 12),
-                    child: HomeContent(),
-                  ),
-                ),
-              ),
-            ),
-          ),
+              child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[Text("hi")],
+          )),
         ),
       );
 }
