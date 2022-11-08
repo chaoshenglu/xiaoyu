@@ -37,7 +37,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       DateBar(),
-                      Image.asset('assets/images/card.png')
+                      Container(
+                          padding: EdgeInsets.only(top: 10),
+                          width: window.physicalSize.width * 0.92,
+                          child: Image.asset('assets/images/card.png')),
                     ],
                   )),
             ],
