@@ -38,6 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ClipRRect(
                           borderRadius: BorderRadius.circular(6),
                           child: Container(
+                            padding: EdgeInsets.only(left: 10, right: 10),
                             width: window.physicalSize.width * 0.92,
                             height: 38,
                             color: Color(0xB4FFFFFF),
