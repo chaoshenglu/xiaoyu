@@ -27,8 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 child: Center(
                     child: Text(
-                  'Hello Wolrd',
-                  style: TextStyle(fontSize: 22.0, color: Colors.black),
+                  '首页',
+                  style: TextStyle(fontSize: 21.0, color: Colors.white),
                 )),
               )
             ],
