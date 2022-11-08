@@ -29,17 +29,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(top: 40),
+                        padding: EdgeInsets.only(top: 56, bottom: 14),
                         child: Text(
                           '首页',
-                          style: TextStyle(fontSize: 21.0, color: Colors.white),
+                          style: TextStyle(fontSize: 19.0, color: Colors.white),
                         ),
                       ),
-                      Container(
-                        width: window.physicalSize.width * 0.9,
-                        height: 44,
-                        color: Colors.black,
-                      )
+                      ClipRRect(
+                          borderRadius: BorderRadius.circular(6),
+                          child: Container(
+                            width: window.physicalSize.width * 0.92,
+                            height: 38,
+                            color: Colors.white,
+                          ))
                     ],
                   )),
             ],
