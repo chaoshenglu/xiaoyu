@@ -26,10 +26,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 child: Center(
+                  child: Padding(
+                    //左边添加8像素补白
+                    padding: EdgeInsets.only(bottom: 140),
                     child: Text(
-                  '首页',
-                  style: TextStyle(fontSize: 21.0, color: Colors.white),
-                )),
+                      '首页',
+                      style: TextStyle(fontSize: 21.0, color: Colors.white),
+                    ),
+                  ),
+                ),
               )
             ],
           )),
