@@ -19,11 +19,11 @@ class _HomeScreenState extends State<HomeScreen> {
             children: <Widget>[
               Container(
                   width: window.physicalSize.width,
-                  height: window.physicalSize.width / 1.81,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assets/images/bg.png"),
-                      fit: BoxFit.cover,
+                      fit: BoxFit.fitWidth,
+                      alignment: Alignment.topCenter,
                     ),
                   ),
                   child: Column(
@@ -36,7 +36,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           style: TextStyle(fontSize: 19.0, color: Colors.white),
                         ),
                       ),
-                      DateBar()
+                      DateBar(),
+                      Image.asset('assets/images/card.png')
                     ],
                   )),
             ],
