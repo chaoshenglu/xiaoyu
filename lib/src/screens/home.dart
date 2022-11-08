@@ -10,14 +10,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          title: Text('首页'),
-        ),
         body: SafeArea(
           child: SingleChildScrollView(
               child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[Text("hi")],
+            children: <Widget>[Image.asset('assets/images/bg.png')],
           )),
         ),
       );
