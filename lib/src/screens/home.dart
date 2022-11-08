@@ -17,24 +17,31 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
-                width: window.physicalSize.width,
-                height: window.physicalSize.width / 1.81,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/images/bg.png"),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                child: Center(
-                  child: Padding(
-                    padding: EdgeInsets.only(bottom: 140),
-                    child: Text(
-                      '首页',
-                      style: TextStyle(fontSize: 21.0, color: Colors.white),
+                  width: window.physicalSize.width,
+                  height: window.physicalSize.width / 1.81,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/bg.png"),
+                      fit: BoxFit.cover,
                     ),
                   ),
-                ),
-              )
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(top: 40),
+                        child: Text(
+                          '首页',
+                          style: TextStyle(fontSize: 21.0, color: Colors.white),
+                        ),
+                      ),
+                      Container(
+                        width: window.physicalSize.width * 0.9,
+                        height: 44,
+                        color: Colors.black,
+                      )
+                    ],
+                  )),
             ],
           )),
         ),
