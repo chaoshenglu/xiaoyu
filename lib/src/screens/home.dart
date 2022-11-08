@@ -47,12 +47,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                   Text(
                                     '2022年11月8日',
                                     style: TextStyle(
-                                        fontSize: 16.0, color: Colors.white),
+                                        fontSize: 15.0,
+                                        color: Color(0xFF0E6650)),
                                   ),
                                   Text(
                                     '星期二',
                                     style: TextStyle(
-                                        fontSize: 16.0, color: Colors.white),
+                                        fontSize: 15.0,
+                                        color: Color(0xFF0E6650)),
                                   ),
                                 ]),
                           ))
