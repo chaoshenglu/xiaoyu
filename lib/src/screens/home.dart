@@ -41,6 +41,20 @@ class _HomeScreenState extends State<HomeScreen> {
                             width: window.physicalSize.width * 0.92,
                             height: 38,
                             color: Color(0xB4FFFFFF),
+                            child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    '2022年11月8日',
+                                    style: TextStyle(
+                                        fontSize: 16.0, color: Colors.white),
+                                  ),
+                                  Text(
+                                    '星期二',
+                                    style: TextStyle(
+                                        fontSize: 16.0, color: Colors.white),
+                                  ),
+                                ]),
                           ))
                     ],
                   )),
