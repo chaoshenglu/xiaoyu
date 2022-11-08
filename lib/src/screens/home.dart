@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Container(
                             width: window.physicalSize.width * 0.92,
                             height: 38,
-                            color: Color(0x50FFFFFF),
+                            color: Color(0xB4FFFFFF),
                           ))
                     ],
                   )),
