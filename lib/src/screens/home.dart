@@ -43,6 +43,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             color: Color(0xB4FFFFFF),
                             child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
                                     '2022年11月8日',
